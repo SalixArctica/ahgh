@@ -1,14 +1,9 @@
 window.onload = () => {
 
-    let nav = document.getElementsByClassName("nav");
     let button = document.getElementsByClassName("hamburgerButton");
-    
+    button[0].addEventListener("click", collapseNav);    
 
-    document.addEventListener("scroll", navColor(nav[0]));
-    console.log(nav)
-
-    button[0].addEventListener("click", collapseNav);
-
+    document.addEventListener("scroll", navColor);
 }
 
 let collapseNav = (event) => {
@@ -28,15 +23,21 @@ let collapseNav = (event) => {
 
 }
 
-let navColor = (nav) => {
+let navColor = (event) => {
+    
 
-    if(window.pageYOffset > 0) {
-        nav.style.background = "#6C7F72";
-    }
-    else {
-        nav.style.background = "none";
-    }
 
+    if(event.type == "scroll" && window.innerWidth > 850) {
+
+        let nav = document.getElementsByClassName("nav")[0];
+
+        if(window.pageYOffset > 0) {
+            nav.style.background = "#6C7F72";
+        }
+        else {
+            nav.style.background = "none";
+        }
+    }
 }
 
 
