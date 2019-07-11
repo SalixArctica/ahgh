@@ -1,0 +1,60 @@
+.banner {
+    width: 100%;
+    background-image: url("images/ecosystem.jpg");
+    background-position-y: 60%;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    padding-bottom: 5em;
+}
+
+html, body {
+    margin: 0;
+    height: 5000px;
+}
+
+nav {
+    transition: all 1s;
+    color: white;
+    padding: 1rem; 
+    position: sticky;
+    top: 0;
+}
+
+.links {
+    display: flex;
+    align-content: flex-end;
+}
+
+.links > a {
+    padding: 0 1rem;
+}
+
+.main-content {
+    position: relative;
+    top: -2rem;
+    display: block;
+    margin: -1rem 12rem 0 12rem;
+    font-size: 1.3rem;
+    background: white;
+    width: fit-content;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+h1 {
+    font-family: "Merriweather", serif;
+    margin: 0;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+    background: rgb(110, 102, 83);
+}

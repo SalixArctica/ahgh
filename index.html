@@ -1,0 +1,46 @@
+<html>
+    <header>
+        <meta charset="utf8"/>
+        <link rel="stylesheet" type="text/css"  href="./index.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto&display=swap" rel="stylesheet">
+
+        <script>
+            
+            let navColor = () => {
+
+                var nav = document.getElementsByClassName("nav");
+                if(window.pageYOffset > 0) {
+                    nav[0].style.background = "black";
+                }
+                else {
+                    nav[0].style.background = "none";
+                }
+
+            }
+
+            document.addEventListener("scroll", navColor);
+
+        </script>
+    </header>
+
+    <body>
+        <div class="banner">
+            <nav class="nav">
+                <div class="links">
+                    <a>About</a>
+                    <a>Directory</a>
+                    <a>Events</a>
+                    <a>Blog/Essays</a>
+                </div>
+            </nav>
+            <img class="logo" width="500px" src="./images/logo.png"/>
+        </div>
+        <div class="wrapper">
+            <div class="main-content">
+                <h1>What is the AHGH?</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula lorem id urna vestibulum pretium. Pellentesque tristique dolor sed lectus dictum, imperdiet luctus massa consectetur. Ut accumsan eros nec eros aliquet, eu consequat lectus ornare. Aenean feugiat enim quam, et blandit ex commodo vel. Phasellus venenatis ligula augue. Cras consectetur faucibus diam, molestie fermentum nibh ullamcorper ac. Quisque non fermentum odio, eu interdum velit. Nullam feugiat lorem ut magna eleifend, in dapibus dolor tempus. Integer quis sollicitudin turpis, ac laoreet arcu. In rhoncus id libero id tempus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ex tellus, auctor ut finibus nec, tempus quis mauris. Aliquam non diam tincidunt, vulputate ante eget, feugiat est. Integer non purus vitae purus convallis maximus et pharetra felis. Nullam dignissim ultrices ultrices.</p>
+            </div>
+        </div>
+
+    </body>
+</html>
